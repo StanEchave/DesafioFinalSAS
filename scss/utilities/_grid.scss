@@ -1,0 +1,77 @@
+/* APLICACION DE GRID PAGE INDEX Y SERVICIOS*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    gap: 10px;
+    align-items: center;
+    
+    grid-template-areas:"parrafo1 imagen1"
+                        "imagen2 parrafo2"
+                        "parrafo3 imagen3"
+                        "footer footer";
+}
+
+.contenido__p1{
+    grid-area: parrafo1;
+}
+
+.contenido__img1{
+    
+    grid-area: imagen1;
+}
+
+.contenido__p2{
+    grid-area: parrafo2;
+}
+
+.contenido__img2{
+    object-fit: cover;
+    grid-area: imagen2;
+}
+
+.contenido__p3{
+    grid-area: parrafo3;
+}
+
+.contenido__img3{
+    grid-area: imagen3;
+}
+
+.pie{
+    grid-area: footer;
+}
+
+/*APLICACION GRID PAGE NOSOTROS */
+
+.contenedor__nosotros{
+    display: grid;   
+    gap: 10px;  
+    grid-template-areas:"presentacion"
+                        "nosotros"
+                        "footer";
+}
+
+.presentacion{
+    grid-area: presentacion;
+}
+
+.nosotros{
+    grid-area: nosotros;
+}
+
+
+/* APLICACION DE GRID PAGE CONTACTO*/
+
+.contenedor1{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    grid-template-areas:"formulario formulario"
+                         "footer footer";
+}
+
+.total_formulario{
+    grid-area: formulario;
+}

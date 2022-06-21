@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box ;  
+}
+
+body{    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+//importamos las configuraciones de grid
+@import "utilities/grid";
+//importamos los estilos del contenido
+@import "utilities/estilos";
+//importamos las queries por tamaño de pantalla
+@import "utilities/queries";
