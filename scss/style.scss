@@ -8,9 +8,51 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+%grid_gap{
+    display: grid;
+    gap: 10;
+}
+
+
+@mixin center{
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin encabezadoBS{
+    position: relative;
+    top: 0;   
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+@mixin contenedor{
+    display: grid;
+    gap: 10;
+    grid-template-areas:"header"
+                        "parrafo1"
+                         "imagen1"
+                         "parrafo2"
+                         "imagen2"
+                         "parrafo3"
+                         "imagen3"
+                         "footer ";
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    
+}
+
 //importamos las configuraciones de grid
 @import "utilities/grid";
 //importamos los estilos del contenido
 @import "utilities/estilos";
 //importamos las queries por tamaño de pantalla
 @import "utilities/queries";
+
+
+
