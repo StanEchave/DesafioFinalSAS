@@ -71,3 +71,44 @@
 .total_formulario{
     grid-area: formulario;
 }
+
+/*APLICACION GRID PAGE CLIENTES */
+
+.contenedorClientes{
+    @extend %grid_gap; 
+    align-items: center;    
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:"presentacion presentacion presentacion presentacion"
+                        "imagen5 imagen2 imagen1 imagen6"
+                        "imagen4 imagen3 imagen7 imagen8"
+                        "footer footer footer footer";
+}
+
+.presentacionClientes{
+    grid-area: presentacion;
+}
+
+.contenidoImg1{
+    grid-area: imagen1;
+}
+.contenidoImg2{
+    grid-area: imagen2;
+}
+.contenidoImg3{
+    grid-area: imagen3;
+}
+.contenidoImg4{
+    grid-area: imagen4;
+}
+.contenidoImg5{
+    grid-area: imagen5;
+}
+.contenidoImg6{
+    grid-area: imagen6;
+}
+.contenidoImg7{
+    grid-area: imagen7;
+}
+.contenidoImg8{
+    grid-area: imagen8;
+}

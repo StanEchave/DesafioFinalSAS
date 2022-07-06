@@ -141,3 +141,45 @@
 .parrafo__nosotros{
     padding: 18px;
 }
+
+/* ESTILOS CLIENTES */
+
+.contenidoImg1{
+    @extend %imgClientes;
+}
+.contenidoImg2{
+    @extend %imgClientes;
+}
+.contenidoImg3{
+    @extend %imgClientes;
+}
+.contenidoImg4{
+    @extend %imgClientes;
+}
+.contenidoImg5{
+    @extend %imgClientes;
+}
+.contenidoImg6{
+    @extend %imgClientes;
+}
+.contenidoImg7{
+    @extend %imgClientes;
+}
+.contenidoImg8{
+    @extend %imgClientes;
+}
+.imgClientes{
+    width: 85%;
+    padding: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.imgClientes:hover{
+    transform:scale(1.4);
+    z-index: 1000;
+}
+.presentacionClientes{
+    text-align: center;
+}
+

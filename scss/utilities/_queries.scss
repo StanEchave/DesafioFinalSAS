@@ -30,6 +30,17 @@
     .parrafo__nosotros{
         padding: 16px;
     }
+
+    .imgClientes{
+        width: 95%;
+    }
+
+    .contenedorClientes{
+        @include contenedorClientes;
+    }
+    .imgClientes:hover{
+        transform:scale(1);
+    }
 }
 
 
@@ -38,47 +49,47 @@
     .contenedor{
         @include contenedor;
     }
-  
     .encabezadoBS{
         @include encabezadoBS;
     }
-    
+
     .contenido__titulo{
-        font-size: 22px;
-         
-    }
-   
+        font-size: 22px;      
+    }  
     .contenido__parrafo{    
         font-size: 18px;
         padding: 5px;
         margin: 5px;
     }
-
     .follow{
         font-size: 16px ;
     }
     .derechos{
         font-size: 12px;
     }
-
     .link_logo{
         width:5%
     }    
-
     .formulario__titulo{
         font-size: 28px;
     }
-
     .formulario__field{
-        width: 75%;
-           
+        width: 75%;        
     }
     .presentacion{
         font-size: 20px;
     }
-
     .parrafo__nosotros{
         padding: 16px;
+    }
+    .imgClientes{
+        width: 100%;
+    }
+    .contenedorClientes{
+        @include contenedorClientes;
+    }
+    .imgClientes:hover{
+        transform:scale(1);
     }
 
 }
@@ -87,49 +98,44 @@
     .contenedor{
         @include contenedor;
     }
-
-    
-  
     .encabezadoBS{
         @include encabezadoBS;
-    }
-
-    
-    
+    } 
     .contenido__titulo{
         font-size: 20px;         
-    }
-   
+    } 
     .contenido__parrafo{    
         font-size: 14px;
         padding: 5px;
     }
-
     .follow{
         font-size: 14px ;
     }
     .derechos{
         font-size: 10px;
     }
-
     .link_logo{
         width:7%
     }
-
     .formulario__titulo{
         font-size: 25px;
     }
-
     .formulario__field{
-        width: 90%;
-           
+        width: 90%;        
     }
-
     .presentacion{
         font-size: 18px;
     }
     .parrafo__nosotros{
         padding: 10px;
     }
-    
+    .contenedorClientes{
+        @include contenedorClientes;
+    }
+    .imgClientes{
+        width: 100%;
+    }
+    .imgClientes:hover{
+        transform:scale(1);
+    }
 }

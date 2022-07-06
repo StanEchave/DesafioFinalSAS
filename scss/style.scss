@@ -7,12 +7,21 @@
 body{    
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+/* EXTEND GRID*/
 %grid_gap{
     display: grid;
     gap: 10;
 }
 
+/* EXTEND CLIENTES*/
+%imgClientes{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+    padding: 10px;
+}
 
 @mixin center{
     justify-content: center;
@@ -45,6 +54,19 @@ body{
     grid-template-rows: 1fr;
     height: 100vh;
     
+}
+
+@mixin contenedorClientes{
+    display: grid;
+    gap: 10; 
+    align-items: center;    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:"presentacion presentacion "
+                        "imagen5 imagen2" 
+                        "imagen1 imagen6"
+                        "imagen4 imagen3" 
+                        "imagen7 imagen8"
+                        "footer footer";
 }
 
 //importamos las configuraciones de grid
