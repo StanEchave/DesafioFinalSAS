@@ -139,7 +139,8 @@ body {
   bottom: 20px;
   z-index: 5;
   width: 60px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: width 250ms; }
 
 /* ANIMACION DEL LOGO DE WPP*/
 .wppLogo:hover {
@@ -224,7 +225,8 @@ body {
   width: 85%;
   padding: 10px;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  transition: transform 400ms; }
 
 .imgClientes:hover {
   transform: scale(1.4);
@@ -240,7 +242,8 @@ body {
     font-size: 20px;
     padding: 5px; }
   .contenido__titulo {
-    font-size: 24px; }
+    font-size: 24px;
+    padding: 1rem; }
   .follow {
     font-size: 18px; }
   .derechos {
@@ -283,7 +286,8 @@ body {
     justify-content: space-around;
     background-color: white; }
   .contenido__titulo {
-    font-size: 22px; }
+    font-size: 22px;
+    padding: 0.8rem; }
   .contenido__parrafo {
     font-size: 18px;
     padding: 5px;
@@ -332,7 +336,8 @@ body {
     justify-content: space-around;
     background-color: white; }
   .contenido__titulo {
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 0.7rem; }
   .contenido__parrafo {
     font-size: 14px;
     padding: 5px; }
